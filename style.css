@@ -1,64 +1,73 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
+/* Base Reset */
+* {
   margin: 0;
   padding: 0;
-  color: #333;
+  box-sizing: border-box;
 }
 
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f0f0f; /* dark black background */
+  color: #e0e0e0; /* light gray text for contrast */
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Resume Container */
 .resume {
   max-width: 800px;
-  margin: 40px auto;
-  background-color: #fff;
-  padding: 40px;
+  margin: auto;
+  background: #1a1a1a; /* dark gray for card background */
+  padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(128, 0, 128, 0.3); /* purple glow */
 }
 
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
+/* Headings */
 header h1 {
-  font-size: 2.5em;
-  margin-bottom: 5px;
-  color: #2c3e50;
+  font-size: 2.5rem;
+  color: #b84aff; /* bright purple */
 }
 
 header p {
-  font-size: 1em;
-  color: #666;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #cfcfcf;
+}
+
+a {
+  color: #b84aff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 section {
-  margin-bottom: 30px;
+  margin-top: 2rem;
 }
 
-h2 {
-  border-bottom: 2px solid #eee;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-  color: #2c3e50;
+section h2 {
+  color: #b84aff;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #b84aff;
+  padding-bottom: 0.25rem;
 }
 
 ul {
-  list-style-type: none;
-  padding-left: 0;
+  list-style: none;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
 }
 
-li {
-  padding: 5px 0;
-}
-
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skill-list li {
-  background-color: #ecf0f1;
-  padding: 8px 12px;
-  border-radius: 6px;
+ul li::before {
+  content: '•';
+  color: #b84aff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
 }
